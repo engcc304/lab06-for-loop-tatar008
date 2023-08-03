@@ -20,6 +20,20 @@
 int main() {
 
     //--| YOUR CODE HERE
-
+    int N ;
+    int i ;
+    printf( "Enter value:\n" ) ;
+    scanf( "%d", &N ) ;
+    if( N % 2 == 1){
+        printf( "series: " ) ;
+        for( i = 1 ; i <= N ; i+=2) {
+            printf( "%d ", i ) ;
+        }
+    }else {
+        printf( "series: " ) ;
+        for( i = N ; i >= 0 ; i -= 2 ) {
+            printf( "%d ", i ) ;
+        }
+    }
     return 0 ;
 }//end main function
